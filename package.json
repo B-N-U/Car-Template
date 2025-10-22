@@ -2,5 +2,9 @@
   "dependencies": {
     "@tailwindcss/cli": "^4.1.15",
     "tailwindcss": "^4.1.15"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "bunx @tailwindcss/cli -i ./src/input.css -o ./src/output.css && bun src/index.html"
   }
 }
