@@ -16,13 +16,14 @@ nav {
 
 }
 
-/* .circle {
+.circle {
   width: 13.33px;
   height: 13.33px;
   border-radius: 50%;
   background-color: #171212;
   flex: justify-start;
-} */
+  display: inline-block;
+}
 
 nav .logo {
   font-size: 18px;
@@ -128,4 +129,5 @@ nav .button {
 #menu-toggle:checked+ul {
   display: block;
 }
+
 /* navbar code */
