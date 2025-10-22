@@ -1,3 +1,4 @@
+/* navbar code */
 * {
   margin: 0;
   padding: 0;
@@ -9,47 +10,62 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
-  /* margin: 10px 10%; */
-  padding: 10px 0;
-  border: #000000 0 2px 0 0 solid;
+  width: 100%;
+  padding: 10px 20px;
+  position: relative;
+
 }
 
+/* .circle {
+  width: 13.33px;
+  height: 13.33px;
+  border-radius: 50%;
+  background-color: #171212;
+  flex: justify-start;
+} */
+
 nav .logo {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
-  color: #000000;
+  color: #171212;
   text-decoration: none;
-  font-family: "Times New Roman",
-    Times,
-    serif;
-  margin: 0 20px;
+  font-style: bold;
+  font-family: Newsreader;
+  line-height: 23px;
+  flex: justify-start;
+
+
+
 }
 
 nav ul li {
   display: inline-block;
-  /* margin: 10px 10px 30px 10px; */
-  font-family: "Times New Roman",
-    Times,
-    serif;
+  font-family: Newsreader;
   /* display: flex;
-    justify-content: ; */
+  justify-content: flex-end; */
+
 }
 
 nav ul li a {
+
   text-decoration: none;
-  color: #000000;
-  font-size: 16px;
+  color: #171212;
+  font-size: 14px;
   font-weight: 500;
+  font-style: medium;
   padding: 6px 12px;
   transition: background-color 0.3s, color 0.3s;
-  font-family: "Times New Roman",
-    Times,
-    serif;
+  font-family: Newsreader;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  flex: justify-end;
+
 }
 
 nav ul li a:hover {
-  background-color: #da2f00;
+  background-color: #D45212;
   color: #ffffff;
   border-radius: 7px;
 
@@ -59,13 +75,57 @@ nav ul li a:hover {
 nav .button {
   text-decoration: none;
   color: #ffffff;
-  font-size: 16px;
-  font-weight: 800;
+  font-size: 14px;
+  font-weight: 700;
+  font-style: bold;
+  line-height: 21px;
   padding: 6px 12px;
   transition: background-color 0.3s, color 0.3s;
-  font-family: "Times New Roman",
-    Times,
-    serif;
-  background-color: #da2f00;
-  border-radius: 7px;
+  font-family: Newsreader;
+  background-color: #D45212;
+  border-radius: 8px;
+  flex: justify-end;
 }
+
+.menu-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+
+  }
+
+  nav ul.active {
+    display: block;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#menu-toggle:checked+ul {
+  display: block;
+}
+/* navbar code */
