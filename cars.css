@@ -1,3 +1,71 @@
-h1 {
-  color: blue;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  /* margin: 10px 10%; */
+  padding: 10px 0;
+  border: #000000 0 2px 0 0 solid;
+}
+
+nav .logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000000;
+  text-decoration: none;
+  font-family: "Times New Roman",
+    Times,
+    serif;
+  margin: 0 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  /* margin: 10px 10px 30px 10px; */
+  font-family: "Times New Roman",
+    Times,
+    serif;
+  /* display: flex;
+    justify-content: ; */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 6px 12px;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: "Times New Roman",
+    Times,
+    serif;
+}
+
+nav ul li a:hover {
+  background-color: #da2f00;
+  color: #ffffff;
+  border-radius: 7px;
+
+
+}
+
+nav .button {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 800;
+  padding: 6px 12px;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: "Times New Roman",
+    Times,
+    serif;
+  background-color: #da2f00;
+  border-radius: 7px;
 }
