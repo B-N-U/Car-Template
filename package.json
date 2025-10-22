@@ -5,6 +5,6 @@
   },
   "devDependencies": {},
   "scripts": {
-    "dev": "bunx @tailwindcss/cli -i ./src/input.css -o ./src/output.css && bun src/index.html"
+    "dev": "bunx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch && bun src/index.html"
   }
 }
