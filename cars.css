@@ -1,3 +1,84 @@
-h1 {
-  color: blue;
+img{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+.flex{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.name .p1{
+margin-bottom: -4px;
+}
+.p2{
+    color: rgb(172, 158, 158);
+    font-size: 14px;
+}
+.stars{
+    margin-top: -4px;
+    width: 20px;
+    height: 20px;
+}
+.likes{
+    display: flex;
+    gap: 35px;
+    margin-top: -10px;
+}
+@media (max-width: 768px) {
+  .comment {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .flex {
+    gap: 10px;
+  }
+
+  .comment img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .name .p1 {
+    font-size: 16px;
+  }
+
+  .stars {
+    font-size: 16px;
+  }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  .comment {
+    padding: 12px;
+    margin: 10px auto;
+  }
+
+  .flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .comment img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .likes {
+    gap: 10px;
+  }
+
+  .likes p {
+    font-size: 16px;
+  }
 }
